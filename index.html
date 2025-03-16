@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&family=Koulen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/foto/more/logo forma fitness.jpg" type="image/x-icon">
+    <title>GYM FF</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="menu-icon" onclick="HAmburgermenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ol class="navbar_links" id="Nav_links">
+                    <a href=""><li>Acasă</li></a>
+                    <a href=""><li>Orar</li></a>
+                    <a href=""><li>Abonament</li></a>
+                    <a href=""><li class="special-nav">GYM</li></a>
+                    <a href=""><li>Clase</li></a>
+                    <a href=""><li>Despre</li></a>
+                    <a href=""><li>Contacte</li></a>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="text-hero-content margin">
+            <h3>Lucrează intens, pentru a avea <br> rezultate</h3>
+            <h1><span class="text-color">Forma Fitness</span> - Crează-ți forma, depășește limitele !</h1>
+        </div>
+        <div class="hero-buttons">
+            <a class="button-subs" href="">Abonează-te</a>
+            <a class="About-button" href="">Despre Noi</a>
+        </div>
+        </div>
+        <div class="video-ov">
+            <div class="overlay"></div>
+            <video class="full-mw" src="assets/video/gym-video.mp4" loop autoplay muted></video>
+        </div>
+    </section>
+    <section class="Orar" id="orar">
+        <div class="orar-text-content">
+        <h1><span class="text-color">ORARUL </span>ANTRENAMENTELOR</h1>
+        <div class="margin">
+        <div class="orar-right-sec">
+            <div class="foto-orar-sec"></div>
+        <div class="zile-orar">
+            <h5 class="zi-orar active" id="luni" onclick="activeCard('luni')">LUNI</h5>
+            <h5 class="zi-orar" id="marti" onclick="activeCard('marti')">MARȚI</h5>
+            <h5 class="zi-orar" id="miercuri" onclick="activeCard('miercuri')">MIERCURI</h5>
+            <h5 class="zi-orar" id="joi" onclick="activeCard('joi')">JOI</h5>
+            <h5 class="zi-orar" id="vineri" onclick="activeCard('vineri')">VINERI</h5>
+        </div>
+        <div class="card-content">
+            <div class="card-orar luni-card">
+                <div class="left-side">
+                    <div class="reg-card-left progress">
+                        <div class="card-left-content">
+                            <h5>10:00</h5>
+                            <h5>-</h5>
+                            <h5>11:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Fitness Class</h1>
+                    <p class="desc-right-side">Descoperă puterea unui antrenament bine structurat, ghidat de un expert dedicat transformării tale. În această clasă, profesorul 
+                        William G. Stewart îmbină exerciții eficiente, tehnici inovatoare și motivația de care ai nevoie pentru a-ți atinge obiectivele de fitness. <br>
+                        Indiferent de nivelul tău, vei primi sprijin personalizat și sfaturi practice care te vor ajuta să devii cea mai bună versiune a ta. Intră în ritm și lasă-te inspirat de energia acestei clase! 
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>William G.Stewart</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card-orar luni-card">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>14:00</h5>
+                            <h5>-</h5>
+                            <h5>15:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Body Building</h1>
+                    <p class="desc-right-side">În această clasă de bodybuilding, Boyd C. Harris, expert recunoscut în domeniu, te va ghida pas cu pas către un fizic puternic și bine definit. Cu o experiență vastă și o abordare practică, Harris îți va împărtăși secretele unui antrenament eficient, tehnici de ridicare corecte și strategii de nutriție personalizate.
+                        Indiferent dacă ești la început sau vrei să-ți perfecționezi rutina, această clasă îți oferă tot ce ai nevoie pentru a excela. Construiește-ți corpul pe care ți-l dorești și învață să-ți depășești limitele alături de Boyd C. Harris! 
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Boyd C. Harris</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar marti-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>10:00</h5>
+                            <h5>-</h5>
+                            <h5>11:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Body Building</h1>
+                    <p class="desc-right-side">În această clasă de bodybuilding, Boyd C. Harris, expert recunoscut în domeniu, te va ghida pas cu pas către un fizic puternic și bine definit. Cu o experiență vastă și o abordare practică, Harris îți va împărtăși secretele unui antrenament eficient, tehnici de ridicare corecte și strategii de nutriție personalizate.
+                        Indiferent dacă ești la început sau vrei să-ți perfecționezi rutina, această clasă îți oferă tot ce ai nevoie pentru a excela. Construiește-ți corpul pe care ți-l dorești și învață să-ți depășești limitele alături de Boyd C. Harris! 
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Boyd C. Harris</h3>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="card-orar marti-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>14:00</h5>
+                            <h5>-</h5>
+                            <h5>15:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Fitness Class</h1>
+                    <p class="desc-right-side">Descoperă puterea unui antrenament bine structurat, ghidat de un expert dedicat transformării tale. În această clasă, profesorul 
+                        William G. Stewart îmbină exerciții eficiente, tehnici inovatoare și motivația de care ai nevoie pentru a-ți atinge obiectivele de fitness. <br>
+                        Indiferent de nivelul tău, vei primi sprijin personalizat și sfaturi practice care te vor ajuta să devii cea mai bună versiune a ta. Intră în ritm și lasă-te inspirat de energia acestei clase! 
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>William G.Stewart</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar miercuri-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>10:00</h5>
+                            <h5>-</h5>
+                            <h5>11:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Yoga Class</h1>
+                    <p class="desc-right-side">În această clasă de yoga, Hector T. Daigle, instructor cu experiență și expert în practici de relaxare și conștientizare, te va ghida printr-o sesiune care combină mișcările fluide, respirația conștientă și meditația pentru a-ți îmbunătăți starea de bine. Cu o abordare calmă și atentă, Hector te va ajuta să-ți găsești echilibrul între corp și minte, să-ți crești flexibilitatea și să-ți reduci stresul.
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Hector T. Daigle</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar miercuri-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>14:00</h5>
+                            <h5>-</h5>
+                            <h5>15:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Advanced Class</h1>
+                    <p class="desc-right-side">Alătură-te clasei de antrenamente avansate cu Bret D. Bowers, expert în fitness și performanță de top, și du-ți pregătirea fizică la nivelul următor. Cu metode inovatoare și programe personalizate, Bret te va provoca să-ți depășești limitele și să obții rezultate excepționale. Fie că îți dorești să-ți îmbunătățești forța maximă, să-ți crești masa musculară sau să-ți sporești rezistența, antrenamentele sale avansate sunt concepute pentru a-ți testa și dezvolta abilitățile.
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Bret D. Bowers</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar joi-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>10:00</h5>
+                            <h5>-</h5>
+                            <h5>11:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Advanced Class</h1>
+                    <p class="desc-right-side">Alătură-te clasei de antrenamente avansate cu Bret D. Bowers, expert în fitness și performanță de top, și du-ți pregătirea fizică la nivelul următor. Cu metode inovatoare și programe personalizate, Bret te va provoca să-ți depășești limitele și să obții rezultate excepționale. Fie că îți dorești să-ți îmbunătățești forța maximă, să-ți crești masa musculară sau să-ți sporești rezistența, antrenamentele sale avansate sunt concepute pentru a-ți testa și dezvolta abilitățile.
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Bret D. Bowers</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar joi-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>14:00</h5>
+                            <h5>-</h5>
+                            <h5>15:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Muscle Training</h1>
+                    <p class="desc-right-side">În această clasă de Muscle Training, Paul D. Newman, un expert renumit în antrenamentele de forță, te va ghida printr-un program intens și eficient, conceput pentru a-ți construi masa musculară și a-ți îmbunătăți performanța. Cu o abordare personalizată, Paul îți va arăta cele mai bune tehnici de ridicare, sfaturi pentru prevenirea accidentărilor și strategii de alimentație pentru a-ți sprijini progresul.
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Paul D. Newman</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar vineri-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>10:00</h5>
+                            <h5>-</h5>
+                            <h5>11:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">Muscle Training</h1>
+                    <p class="desc-right-side">În această clasă de Muscle Training, Paul D. Newman, un expert renumit în antrenamentele de forță, te va ghida printr-un program intens și eficient, conceput pentru a-ți construi masa musculară și a-ți îmbunătăți performanța. Cu o abordare personalizată, Paul îți va arăta cele mai bune tehnici de ridicare, sfaturi pentru prevenirea accidentărilor și strategii de alimentație pentru a-ți sprijini progresul.
+                    </p>
+                    <div class="Teach-right-side">
+                        <div class=""></div>
+                        <h3>Paul D. Newman</h3>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div class="card-orar vineri-card" style="display: none;">
+                <div class="left-side">
+                    <div class="reg-card-left">
+                        <div class="card-left-content">
+                            <h5>14:00</h5>
+                            <h5>-</h5>
+                            <h5>15:30</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="margin-right-side">
+                    <h1 class="Title-right-side">YOGA class</h1>
+                    <p class="desc-right-side">În această clasă de yoga, Hector T. Daigle, instructor cu experiență și expert în practici de relaxare și conștientizare, te va ghida printr-o sesiune care combină mișcările fluide, respirația conștientă și meditația pentru a-ți îmbunătăți starea de bine. Cu o abordare calmă și atentă, Hector te va ajuta să-ți găsești echilibrul între corp și minte, să-ți crești flexibilitatea și să-ți reduci stresul.</p>
+                        <div class="Teach-right-side">
+                            <div class=""></div>
+                            <h3>Hector T. Daigle</h3>
+                        </div>
+                    </div>
+                </div>
+    
+        </div>
+    </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+
+
+
+
+
+    <section class="Abonament margin" id="Abonament">
+        <h1 class="text-color">ABONAMENT</h1>
+        <div class="container-cards">
+            <div class="card-abonament">
+                <div class="content-card-abon">
+                <div class="top-abon-card">
+                <h2 class="title-card">Econom</h2>
+                <h2 class="Price-card">1200LEI</h2>
+                </div>
+                <div class="facil-card">
+                    <ul>
+                        <li>
+                            Acces complet la sala de fitness pentru un an întreg.
+                        </li>
+                        <li>
+                            Facilități incluse: vestiar și dușuri.
+                        </li>
+                        <li>
+                            Participare gratuită la clasele de grup.
+                        </li>
+                        <li class="deny">
+                            Evaluări periodice ale progresului.
+                        </li>
+                        <li class="deny">
+                            Planuri personalizate de antrenament și nutriție.
+                        </li>
+                        <li class="deny">
+                            Acces la echipamente premium de fitness.
+                        </li>
+                        <li class="deny">
+                            Sesiuni individuale cu antrenor personal.
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="termen-card">12 Luni</h2>
+            </div>
+            </div>
+            <div class="card-abonament">
+                <div class="content-card-abon">
+                <div class="top-abon-card">
+                <h2 class="title-card">Standart</h2>
+                <h2 class="Price-card">899LEI</h2>
+                </div>
+                <div class="facil-card">
+                    <ul>
+                        <li>
+                            Acces complet la sala de fitness pentru un an întreg.
+                        </li>
+                        <li>
+                            Facilități incluse: vestiar și dușuri.
+                        </li>
+                        <li>
+                            Participare gratuită la clasele de grup.
+                        </li>
+                        <li>
+                            Evaluări periodice ale progresului.
+                        </li>
+                        <li class="deny">
+                            Planuri personalizate de antrenament și nutriție.
+                        </li>
+                        <li class="deny">
+                            Acces la echipamente premium de fitness.
+                        </li>
+                        <li class="deny">
+                            Sesiuni individuale cu antrenor personal.
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="termen-card">3 Luni</h2>
+            </div>
+            </div>
+            <div class="card-abonament">
+                <div class="content-card-abon">
+                <div class="top-abon-card">
+                <h2 class="title-card">Premium</h2>
+                <h2 class="Price-card">2199LEI</h2>
+                </div>
+                <div class="facil-card">
+                    <ul>
+                        <li>
+                            Acces complet la sala de fitness pentru un an întreg.
+                        </li>
+                        <li>
+                            Facilități incluse: vestiar și dușuri.
+                        </li>
+                        <li>
+                            Participare gratuită la clasele de grup.
+                        </li>
+                        <li>
+                            Evaluări periodice ale progresului.
+                        </li>
+                        <li>
+                            Planuri personalizate de antrenament și nutriție.
+                        </li>
+                        <li>
+                            Acces la echipamente premium de fitness.
+                        </li>
+                        <li>
+                            Sesiuni individuale cu antrenor personal.
+                        </li>
+                    </ul>
+                </div>
+                <h2 class="termen-card">3 Luni</h2>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="Recenzii">
+        <h1 class="title-recenzii">Recenzii</h1>
+        <div class="container-foto-bg">
+            <div class="container-recenzii-margin margin">
+                <div class="container-recenzii">
+                    <div class="celula-recenzii vizibil">
+                        <div class="content-celula">
+                            <div class="top-content">
+                                <div class="profile-icoM"></div>
+                                <div class="top-info">
+                                    <h2>ANDREI BADEA</h2>
+                                    <h5>ACUM 20 ZILE</h5>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star-no"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Sala de fitness este absolut genială! Echipamentele sunt moderne, curate și bine întreținute. 
+                               Personalul este mereu amabil și gata să te ajute. Clasele de grup sunt variate și antrenorii au o energie incredibilă. Recomand cu încredere!</p>
+                        </div>
+                    </div>
+                    <div class="celula-recenzii">
+                        <div class="content-celula">
+                            <div class="top-content">
+                                <div class="profile-icoF"></div>
+                                <div class="top-info">
+                                    <h2>MARIA POPESCU</h2>
+                                    <h5>ACUM 22 ZILE</h5>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Sala de fitness este absolut genială! Echipamentele sunt moderne, curate și bine întreținute. <br>
+                               Personalul este mereu amabil și gata să te ajute. Clasele de grup sunt variate și antrenorii au o energie incredibilă. Recomand cu încredere!</p>
+                        </div>
+                    </div>
+                    <div class="celula-recenzii">
+                        <div class="content-celula">
+                            <div class="top-content">
+                                <div class="profile-icoM"></div>
+                                <div class="top-info">
+                                    <h2>SANDU CEBAN</h2>
+                                    <h5>ACUM 31 ZILE</h5>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star-no"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Mă duc de mulți ani la Forma Fitness Club în camera de bronzat și nu pot spune decât lucruri bune, lămpile se schimbă în timp, totul este întotdeauna curat și dezinfectat, ceea ce este foarte important pentru camera de bronzat.</p>
+                        </div>
+                    </div>
+                    <div class="celula-recenzii">
+                        <div class="content-celula">
+                            <div class="top-content">
+                                <div class="profile-icoF"></div>
+                                <div class="top-info">
+                                    <h2>OXANA CILOCI</h2>
+                                    <h5>ACUM 38 ZILE</h5>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star"></i>
+                                        <i class="fa-solid fa-star star-no"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Am început cu un antrenor personal aici și nu regret nicio clipă! Mi-a creat un plan personalizat, m-a motivat și am văzut rezultate după doar câteva săptămâni. Dacă vrei să te ții serios de treabă, acest loc este perfect!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <i class="fa-solid fa-arrow-left left-arrow" onclick="schimbaRecenzie(-1)"></i>
+                    <i class="fa-solid fa-arrow-right riht-arrow" onclick="schimbaRecenzie(1)"></i>
+                </div>
+            </div>
+        </div> 
+    </section>
+    <section class="Clase" id="Clase">
+        <i class="fa-solid fa-dumbbell icon-clase-1"></i>
+        <i class="fa-solid fa-dumbbell icon-clase-2"></i>
+        <h1>CLASE</h1>
+        <div class="left-sec-class margin">
+            <div class="select-viz-clase">
+        <div class="clasele-gym">
+            <h5 class="clasa-gym selected" id="fitness">FITNESS CLASS</h5>
+            <h5 class="clasa-gym " id="muscle">MUSCLE TRAINING</h5>
+            <h5 class="clasa-gym " id="body">BODY BUILDING</h5>
+            <h5 class="clasa-gym " id="yoga">YOGA TRAINING</h5>
+            <h5 class="clasa-gym " id="advanced">ADVANCED CLASS</h5>
+            <h5 class="clasa-gym cl-gym-orar">ORAR</h5>
+        </div>
+        <div class="container-viz-clase" id="fitness-class" style="display: flex;">
+            <div class="content-viz-clase">
+                <img src="assets/foto/more/training-image-04.jpg" alt="">
+                <div class="text-content-clase-viz">
+                <p>Recomandat pentru începători și intermediari.</p>
+                <div class="buttons-viz-clase">
+                <a class="abon-clas" href="#Abonament">Abonează-te</a>
+                <a class="alege-clas" href="#Abonament">Alege</a>
+                <a class="online-clas" href="#Abonament">Fă online</a>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="container-viz-clase" id="muscle-class" style="display: none;">
+            <div class="content-viz-clase">
+                <img src="assets/foto/more/training-image-01.jpg" alt="">
+                <div class="text-content-clase-viz">
+                <p>Potrivit pentru cei care vor să-și dezvolte masa musculară.</p>
+                <div class="buttons-viz-clase">
+                <a class="abon-clas" href="#Abonament">Abonează-te</a>
+                <a class="alege-clas" href="#Abonament">Alege</a>
+                <a class="online-clas" href="#Abonament">Fă online</a>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="container-viz-clase" id="body-class" style="display: none;">
+            <div class="content-viz-clase">
+                <img src="assets/foto/more/training-image-03.jpg" alt="">
+                <div class="text-content-clase-viz">
+                <p>Pentru cei care vor un corp definit și muscular.</p>
+                <div class="buttons-viz-clase">
+                <a class="abon-clas" href="#Abonament">Abonează-te</a>
+                <a class="alege-clas" href="#Abonament">Alege</a>
+                <a class="online-clas" href="#Abonament">Fă online</a>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="container-viz-clase"  id="yoga-class" style="display: none;">
+            <div class="content-viz-clase">
+                <img src="assets/foto/more/training-image-02.jpg" alt="">
+                <div class="text-content-clase-viz">
+                <p>Perfect pentru relaxare și flexibilitate.</p>
+                <div class="buttons-viz-clase">
+                <a class="abon-clas" href="#Abonament">Abonează-te</a>
+                <a class="alege-clas" href="#Abonament">Alege</a>
+                <a class="online-clas" href="#Abonament">Fă online</a>
+            </div>
+            </div>
+            </div>
+        </div>
+        <div class="container-viz-clase " id="advanced-class" style="display: none;">
+            <div class="content-viz-clase">
+                <img src="assets/foto/more/training-image-05.jpg" alt="">
+                <div class="text-content-clase-viz">
+                <p>Include antrenamente intense și complexe.</p>
+                <div class="buttons-viz-clase">
+                <a class="abon-clas" href="#Abonament">Abonează-te</a>
+                <a class="alege-clas" href="#Abonament">Alege</a>
+                <a class="online-clas" href="#Abonament">Fă online</a>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-foto-class-sec">
+        <div class="right-foto-class"></div>
+    </div>
+    </div>
+
+    </section>
+    <section class="Despre-noi">
+        <h1>DESPRE NOI</h1>
+        <div class=" margin text-content-about">
+        <h4>
+            La Forma Fitness, acoperim multiple domenii, astfel încât fiecare să găsească activitatea care i se potrivește: <br></h4> 
+<ul>
+    <li>
+        Gym: Un spațiu modern, echipat cu aparatură de ultimă generație, deschis de luni până duminică între 8:00 și 21:00, pentru a-ți atinge obiectivele de fitness.
+    </li>
+    <li>
+        Boxing Club: Pregătire profesională pentru cei pasionați de box, fie că ești începător sau experimentat.
+    </li>
+    <li>
+        Dance Club: Clase pline de energie, care îmbină distracția cu exercițiile fizice, perfecte pentru toți iubitorii de dans.
+    </li>
+    <li>
+        Și multe altele: Fie că e vorba de yoga, pilates, antrenamente personalizate sau programe de nutriție, avem tot ce ai nevoie pentru un stil de viață sănătos.
+    </li>
+</ul>
+<h4>De ce Forma Fitness?</h4>
+    <ul>
+        <li>
+            Profesionalism: Echipa noastră este formată din antrenori certificați și dedicați, care te vor ghida spre succes.
+        </li>
+        <li>
+         Diversitate: Indiferent de nivelul tău de experiență, avem activități potrivite pentru tine.
+        </li>
+        <li>
+            Comunitate: La Forma Fitness, nu ești doar un membru - ești parte dintr-o familie care te susține.
+         </li>
+    </ul>
+
+<h4>Hai să descoperim împreună ce înseamnă să fii în cea mai bună formă a vieții tale! 💪 <br>Te așteptăm la Forma Fitness, unde sănătatea și bucuria mișcării sunt pe primul loc. <br>
+Contactează-ne pentru mai multe detalii sau pentru a începe aventura ta fitness chiar azi!
+</h4>
+</div>
+    </section>
+    <!-- <section class="FAQ"> 
+        <div class="left-section-FAQ">
+            <div class="container-Questions">
+                <div class="question">
+                    <h2>De cate ori faceti curat <span class="another-font">?</span></h2>
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="answer">
+                    <h2>de mai multe ori pe zi</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+
+</main>
+<footer>
+    <div class="container-footer">
+
+        <div class="container-footer-content margin">
+            <div class="maps-footer-left"> 
+                <iframe class="maps-footer" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1301.7707282081287!2d28.822995478663234!3d47.37632682932219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40cbef146535ca1f%3A0x616058a848323431!2sForma_fitness_club_Orhei!5e0!3m2!1sro!2s!4v1739889386761!5m2!1sro!2s" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+            <div class="center-container-footer">
+
+
+
+                <div class="button-abon"> <a href="">Abonează-te</a></div>
+
+                <div class="social-butons-footer">
+                    <a target="_blank" href="https://www.instagram.com/fitnessformaorhei?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+
+                        <i  class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a target="_blank" href="https://www.facebook.com/formaorhei/?locale=ro_RO">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="text-content-footer">
+                    <p>Discforma@gmail.com</p>
+                    <p>0688 34 448</p>
+                </div>
+
+            </div>
+            <div class="container-contact-footer">
+                <form class="form" action="">
+                    <div class="top-form">
+                    <input type="email" id="email" name="email" placeholder="Email">
+                    <input type="text" id="name" name="name" placeholder="Nume">
+                </div>
+                    <div><textarea id="mesaj" name="mesaj" placeholder="Mesaj"></textarea></div>
+                    <div>
+                        <input type="submit" id="trimite" value="Trimite">
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+            <p class="copy-right">&copy 2025 Toate drepturile rezervate</p>
+    </div>
+</footer>
+</body>
+<script src="https://kit.fontawesome.com/10302cdb2c.js" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+</html>
